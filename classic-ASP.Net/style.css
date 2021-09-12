@@ -29,8 +29,11 @@
     color: white;
     width: 30%;
     margin: auto;
-    padding:5px, 2px, 5px, 20px;
-    border: 2px, solid, red;
+}
+
+.field-set {
+    border-color: #F00;
+    border-style: solid;
 }
 
 .header {
@@ -38,19 +41,17 @@
     margin-bottom: 10px;
 }
 
-.header p {
-    background-color: blue;
-    border-bottom: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color:coral;
+.line-1 {
+    height: 2px;
+    background: darkgray;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 #box-left {
     width: 30%;
     float: left;
-    height:300px;
+    height:280px;
 }
 
 #box-right {
@@ -58,12 +59,3 @@
     float: right;
     height: auto;
 }
-
-/*.button-center input[type=reset] {*/
-/*    align-items: center;*/
-    /*padding: 5px, 5px, 10px, 30px;
-}
-
-.button-center input[type=submit] {
-    padding: 5px, 5px, 10px, 5px;
-}*/

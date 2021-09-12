@@ -12,12 +12,17 @@
     <div class="header">
         <h1>Dior - Women - Bags</h1>
         <h2>Online Sale </h2>
-        <p>Sale $ 500 for a bag, The sale finish this week, Hurry up, Don't miss it ...</p>
+        <div class="line-1"></div>
+        <font color="coral">
+            <marquee direction="left" style="background: blue">Sale $ 500 for a bag, The sale finish this week, Hurry up, Don't miss it</marquee>
+        </font>
+        <div class="line-1"></div>
     </div>
 
-    <form id="MyForm" runat="server">
+    <form action="order.aspx" method="post" id="MyForm" runat="server">
 
-        <div id="box-left">
+        <fieldset class="field-set">
+             <div id="box-left">
             <label>Customer: </label>
             <br />
             <br />
@@ -37,34 +42,35 @@
         </div>
 
         <div id="box-right">
-            <input type="text" name="cusomer" /><br />
+            <input type="text" name="customer" /><br />
             <br />
 
-            <input type="radio" name="gender" value="Gender" />Female<br />
-            <input type="radio" name="gender" value="Gender" />Male<br />
+            <input type="radio" name="gender" value="female"/>Female<br />
+            <input type="radio" name="gender" value="male"/>Male<br />
 
-            <select value="color" size="1">
+            <select value="color" name="bagColor" size="1">
                 <option value="black">Black </option>
                 <option value="brown">Brown </option>
                 <option value="pink">Pink </option>
             </select><br />
             <br />
 
-            <select value="color" size="3">
-                        <option value="brown">Brown </option>
-                        <option value="black">Black </option>
-                        <option value="pink">Pink </option>
+            <select value="color" name="bagSize" size="3">
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
             </select><br />
 
-            <input type="checkbox" name="accessories" />Strap(30$)<br />
-            <input type="checkbox" name="accessories" />Rings(50$)<br />
-            <input type="checkbox" name="accessories" />Scarf(80$)<br />
+            <input type="checkbox" name="strap" value="strap"/>Strap(30$)<br />
+            <input type="checkbox" name="ring" value="ring"/>Rings(50$)<br />
+            <input type="checkbox" name="scarf" value="scarf"/>Scarf(80$)<br /><br />
         </div>
 
-        <div class="button-center">
+        <div>
             <input type="submit" value="Order Now" />
-            <input id="vertical-center" type="reset" value="Clear" />
+            <input type="reset" value="Clear" />
         </div>
+        </fieldset>
 
     </form>
 </body>
