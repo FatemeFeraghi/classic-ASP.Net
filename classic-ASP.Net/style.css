@@ -6,7 +6,7 @@
 
 .auto-style {
     width: 300px;
-    background-color: #36aee2;
+    background-color: navy;
     text-align: center;
 }
 
@@ -25,15 +25,10 @@
 /*------------------ index-dior style -------------------*/
 
 #MyForm {
-    background-color: blue;
+    background-color: navy;
     color: white;
     width: 30%;
     margin: auto;
-}
-
-.field-set {
-    border-color: #F00;
-    border-style: solid;
 }
 
 .header {
@@ -41,20 +36,18 @@
     margin-bottom: 10px;
 }
 
-.line-1 {
-    height: 2px;
-    background: darkgray;
-    margin-bottom: 10px;
-    margin-top: 5px;
+.border-red{
+    border:2px solid #ff006e;
+    border-collapse:collapse;
 }
 
-#box-left {
+.box-left {
     width: 30%;
     float: left;
     height:280px;
 }
 
-#box-right {
+.box-right {
     width: 50%;
     float: right;
     height: auto;
