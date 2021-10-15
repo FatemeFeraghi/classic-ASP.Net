@@ -17,18 +17,16 @@
 
             if (name == "") {
                 if (pass == "") {
-                    document.getElementById("parameterError").innerHTML = "Please enter the the required fields.";
+                    document.getElementById("parameterError").innerHTML = "Please enter the username and password!";
                     return false;
                 }
                 document.getElementById("parameterError").innerHTML = "Please enter the username.";
                 return false;
             }
-
             if (pass == ""){
-                document.getElementById("parameterError").innerHTML = "Please enter the password";
+                document.getElementById("parameterError").innerHTML = "Please enter the password.";
                 return false;
             }
-
             return true;
         }
 
@@ -38,7 +36,7 @@
 <body>
     <h1 class="auto-style2"><u>LIONS-CLUB</u></h1>
 
-    <form action="welcome.aspx" method="post" id="MyForm1" runat="server" onsubmit="verify()">
+    <form action="welcome.aspx" method="post" id="MyForm1" runat="server" onsubmit="return verify()">
         <div>
             <table class="auto-style" align="center">
                 <tr>
