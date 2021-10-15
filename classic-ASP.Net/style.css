@@ -22,14 +22,21 @@
     width: 60px;
 }
 
-/*------------------ index-dior style -------------------*/
-
-#MyForm {
-    background-color: navy;
+#MyForm1 {
     color: white;
     width: 30%;
     margin: auto;
 }
+
+/*------------------ index-dior style -------------------*/
+
+#MyForm2 {
+    color: white;
+    background-color: navy;
+    width: 30%;
+    margin: auto;
+}
+
 
 .header {
     text-align: center;
@@ -42,7 +49,7 @@
 }
 
 .box-left {
-    width: 30%;
+    width: 35%;
     float: left;
     height:280px;
 }
@@ -50,5 +57,5 @@
 .box-right {
     width: 50%;
     float: right;
-    height: auto;
+    height: 280px;
 }

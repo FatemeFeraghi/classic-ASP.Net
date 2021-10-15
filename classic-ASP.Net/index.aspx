@@ -34,13 +34,11 @@
 
     </script>
 
-    <style type="text/css"></style>
-
 </head>
 <body>
     <h1 class="auto-style2"><u>LIONS-CLUB</u></h1>
 
-    <form action="welcome.aspx" method="post" id="form1" runat="server" onsubmit="verify()">
+    <form action="welcome.aspx" method="post" id="MyForm1" runat="server" onsubmit="verify()">
         <div>
             <table class="auto-style" align="center">
                 <tr>

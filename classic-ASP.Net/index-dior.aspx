@@ -19,7 +19,7 @@
         <hr />
     </div>
 
-    <form action="order.aspx" method="post" id="MyForm" runat="server" class="border-red">
+    <form action="order.aspx" method="post" id="MyForm2" runat="server" class="border-red">
 
         <fieldset>
              <div class="box-left">
@@ -48,25 +48,25 @@
                 <input type="radio" name="gender" value="female"/>Female<br />
                 <input type="radio" name="gender" value="male"/>Male<br />
 
-                <select value="color" name="bagColor" size="1" style="width:80%">
+                <select name="bagColor" size="1">
                     <option value="black">Black </option>
                     <option value="brown">Brown </option>
                     <option value="pink">Pink </option>
                 </select><br />
                 <br />
 
-                <select value="color" name="bagSize" size="3" style="width:80%">
+                <select name="bagSize" size="3">
                     <option value="small">Small </option>
                     <option value="medium">Medium </option>
                     <option value="large">Large </option>
-                </select><br />
+                </select><br /><br />
 
                 <input type="checkbox" name="strap" value="strap"/>Strap(30$)<br />
                 <input type="checkbox" name="ring" value="ring"/>Rings(50$)<br />
                 <input type="checkbox" name="scarf" value="scarf"/>Scarf(80$)<br /><br />
             </div>
 
-            <div style="width:30%" >
+            <div style="width:40%" >
                 <input type="submit" value="Order Now" style="float:left"/>
             </div>
 
